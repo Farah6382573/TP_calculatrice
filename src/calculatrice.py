@@ -1,4 +1,4 @@
-
+# src/calculatrice.py
 def division(a: float, b: float) -> float:
     if b == 0:
         raise ZeroDivisionError("Division par zéro interdite")
