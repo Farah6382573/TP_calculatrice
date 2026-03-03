@@ -4,7 +4,7 @@ from src.calculatrice import division, puissance, moyenne
 
 class TestCalculatrice(unittest.TestCase):
 
-    # --- DIVISION ---
+    # DIVISION 
 
     def test_division_entiers(self):
         self.assertEqual(division(10, 2), 5)
@@ -16,7 +16,7 @@ class TestCalculatrice(unittest.TestCase):
         with self.assertRaises(ZeroDivisionError):
             division(10, 0)
 
-    # --- PUISSANCE ---
+    # PUISSANCE 
 
     def test_puissance_positive(self):
         self.assertEqual(puissance(2, 3), 8)
@@ -28,7 +28,7 @@ class TestCalculatrice(unittest.TestCase):
         with self.assertRaises(ValueError):
             puissance(2, -3)
 
-    # --- MOYENNE ---
+    # MOYENNE
 
     def test_moyenne_plusieurs_valeurs(self):
         self.assertEqual(moyenne([2, 4, 6, 8]), 5)
